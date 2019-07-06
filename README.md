@@ -58,5 +58,12 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ```bash
-echo 'export LEAFLET_MAPS_API_KEY=pk.eyJ1IjoiYm9ic21pdCIsImEiOiJjanhyMTlmcDAwNDVtM21wOHRxaWFsMDFwIn0.PDvotjjbR-qD8ZOH6EDqHA' >> ~/.bashrc
+# get your api key from here
+open https://account.mapbox.com/access-tokens/;
+npm install -g surge;
+{
+  LEAFLET_MAPS_API_KEY=<api key here> npx ember-cli build --environment=development;
+  cp dist/index.html dist/200.html;
+  surge dist;
+}
 ```
