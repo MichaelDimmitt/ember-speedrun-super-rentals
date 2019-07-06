@@ -1,3 +1,4 @@
+
 # super-rentals
 
 This README outlines the details of collaborating on this Ember application.
@@ -55,3 +56,7 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+```bash
+echo 'export LEAFLET_MAPS_API_KEY=pk.eyJ1IjoiYm9ic21pdCIsImEiOiJjanhyMTlmcDAwNDVtM21wOHRxaWFsMDFwIn0.PDvotjjbR-qD8ZOH6EDqHA' >> ~/.bashrc
+```
